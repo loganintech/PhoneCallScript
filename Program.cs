@@ -8,8 +8,8 @@ namespace PhoneCallScript
 {
 	class Program
 	{
-		public static string accountId = "";
-		public static string authToken = "";
+		public static string accountId = ""; //You will need to provide some info here
+		public static string authToken = ""; //You will need to provide some info here
 		public static List<string> numbers = new List<string>(new string[] { "", "" }); //Configure in your twilio account. Numbers must be in +12223334444 where 222 is area code and 3334444 is number. More numbers, more calls.
 		public static List<string> numbersInUse = new List<string>(); //Idk why the guy included this, it was never used
 		public static string NumToCall = "";
