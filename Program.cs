@@ -29,10 +29,10 @@ namespace PhoneCallScript
 			Console.Clear();
 			TwilioClient.Init(accountId, authToken);
 
-			int count = 1;
+			int count = 0;
 			do
 			{
-				Console.WriteLine($"Starting Call Batch {count.ToString()} ({numbers.Count} Nums.)");
+				Console.WriteLine($"Starting Call Batch {count + 1} ({numbers.Count} Nums.)");
 				foreach (string num in numbers)
 				{
 					Call(num);
