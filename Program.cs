@@ -16,8 +16,9 @@ namespace PhoneCallScript
 		static void Main(string[] args)
 		{
 			Console.WriteLine(" -- Call Scammer Line Flooder (v0.0.1) -- "); //Fuck yeah, semantic versioning
-			Console.WriteLine("Enter number to flood harder than the red sea in egypt (remember to add +1 at the beginning): ");
-			Console.ReadLine();
+			Console.Write("Enter number to flood harder than the red sea in egypt (remember to add +1 at the beginning): ");
+			NumToCall = Console.ReadLine();
+			Console.WriteLine("");
 			Console.WriteLine("Press ENTER to let the sea walls fall. Otherwise, hit the X to close.");
 			Console.ReadLine();
 			Console.Clear();
