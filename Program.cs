@@ -20,7 +20,6 @@ namespace PhoneCallScript
 		public static string NumToCall = "";
 		static void Main(string[] args)
 		{
-
 			Console.WriteLine(" -- Call Scammer Line Flooder (v0.0.1) -- "); //Fuck yeah, semantic versioning
 			Console.WriteLine("Enter number to flood harder than the red sea in egypt (remember to add +1 at the beginning): ");
 			Console.ReadLine();
@@ -41,8 +40,6 @@ namespace PhoneCallScript
 				count++;
 				System.Threading.Thread.Sleep(5000);
 			} while (true); //Dangerous game here, scotty
-
-
 		}
 
 		static void Call(string fromNumber)
