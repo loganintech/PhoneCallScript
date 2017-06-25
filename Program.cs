@@ -30,10 +30,10 @@ namespace PhoneCallScript
 				foreach (string num in numbers)
 				{
 					Call(num);
-					System.Threading.Thread.Sleep(10000);
+					System.Threading.Thread.Sleep(1000);
 				}
 				count++;
-				System.Threading.Thread.Sleep(50000);
+				System.Threading.Thread.Sleep(5000);
 			} while (true); //Dangerous game here, scotty
 		}
 
