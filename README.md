@@ -1,8 +1,5 @@
 ## I will not be held responsible for usage of this program.
 
-To install and run, make sure you have dotnet core installed. Then, using the CLI, run `dotnet restore`
-
-If you have Visual Studio, this might be done for you.
 
 ### Info
 
@@ -11,12 +8,11 @@ I decided to slap this on here because I saw [this youtube video](https://www.yo
 
 ### Run
 
-Fill out empty info in the .cs file. 
 
-Run Commands
+Fill out empty info in the .cs file. 
+Run:
 ```
 dotnet restore
-
 dotnet run
 ```
 
