@@ -15,5 +15,7 @@ Run:
 dotnet restore
 dotnet run
 ```
+Hold escape to clean exit after a batch of calls.
+
 
 THIS COSTS YOU MONEY, DO NOT RUN UNLESS YOU KNOW THE FULL COSTS OF THE TWILIO API
