@@ -8,10 +8,9 @@ namespace PhoneCallScript
 {
 	class Program
 	{
-		public static string accountId = ""; //You will need to provide some info here
-		public static string authToken = ""; //You will need to provide some info here
-		public static List<string> numbers = new List<string>(new string[] { "", "" }); //Configure in your twilio account. Numbers must be in +12223334444 where 222 is area code and 3334444 is number. More numbers, more calls.
-		public static List<string> numbersInUse = new List<string>(); //Idk why the guy included this, it was never used
+		public static string accountId = ""; //Can be accessed from: https://www.twilio.com/console
+		public static string authToken = ""; //Can be accessed from: https://www.twilio.com/console
+		public static List<string> numbers = new List<string>(new string[] { "+1", "+1" }); //Get numbers from the twilio API https://www.twilio.com/console/phone-numbers/search (one dollar each)		public static List<string> numbersInUse = new List<string>(); //Idk why the guy included this, it was never used
 		public static string NumToCall = "";
 		static void Main(string[] args)
 		{
@@ -44,10 +43,10 @@ namespace PhoneCallScript
 				var call = CallResource.Create(
 					to: new PhoneNumber(NumToCall),
 					from: new PhoneNumber(fromNumber),
-					record: true,
+					record: true, //You can access the recordings from: https://www.twilio.com/console/voice/dashboard
 					url: new Uri("") //Should be a link to this kind of file: https://www.twilio.com/docs/api/twiml - Host here: https://www.twilio.com/console/dev-tools/twiml-bins
 				);
-				Console.WriteLine($"Starting call to {call.To} from {fromNumber}.");
+				Console.WriteLine($"Starting call to {call.To} from {fromNumber} starting {call.StartTime}.");
 			}
 			catch (Exception ex)
 			{
