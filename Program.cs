@@ -10,7 +10,7 @@ namespace PhoneCallScript
 	{
 		public static string accountId = ""; // Can be accessed from: https://www.twilio.com/console
 		public static string authToken = ""; // Can be accessed from: https://www.twilio.com/console 
-		public static List<string> numbers = new List<string>(new string[] { "+16693335823" }); // Get numbers from the twilio API https://www.twilio.com/console/phone-numbers/search (one dollar each)		public static List<string> numbersInUse = new List<string>(); //Idk why the guy included this, it was never used
+		public static List<string> numbers = new List<string>(new string[] { "+1" }); // Get numbers from the twilio API https://www.twilio.com/console/phone-numbers/search (one dollar each)		public static List<string> numbersInUse = new List<string>(); //Idk why the guy included this, it was never used
 		public static string NumToCall = "";
 		static void Main(string[] args)
 		{
