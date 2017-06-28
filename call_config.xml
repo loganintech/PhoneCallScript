@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Response>
-    <Say voice="alice">I am hackerman. Master hacker of the hackerspace.</Say>
+    <Say voice="alice">Host somthing like this here: https://www.twilio.com/console/dev-tools/twiml-bins to tell the call what to do.</Say>
 </Response>
