@@ -15,10 +15,12 @@
 Fill out empty info in the .cs file. 
 Run:
 ```
-dotnet restore (when first downloading the repository only)
-dotnet run (every time to run the program)
+dotnet restore
+dotnet run
 ```
 Hold escape to clean exit after a batch of calls.
+
+Note: `dotnet restore` is what downloads the libraries and only needs to be run once when you first download the repo. `dotnet run` is the actually command that starts the program.
 
 ### Pricing
 
